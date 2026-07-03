@@ -1,0 +1,22 @@
+{
+  "title": "Aesthetic Music Tagger Input",
+  "type": "object",
+  "schema": {
+    "type": "object",
+    "required": [],
+    "properties": {
+      "fileUrl": {
+        "title": "Audio File URL",
+        "type": "string",
+        "description": "URL to an audio file (MP3, FLAC, WAV, OGG)",
+        "editor": "textfield"
+      },
+      "filePath": {
+        "title": "Local File Path",
+        "type": "string",
+        "description": "Local path to an audio file (alternative to fileUrl)",
+        "editor": "textfield"
+      }
+    }
+  }
+}

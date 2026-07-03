@@ -1,0 +1,2 @@
+# Requirements for Playlist Optimizer actor
+apify>=2.0.0

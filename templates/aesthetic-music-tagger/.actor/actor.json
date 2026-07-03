@@ -1,0 +1,28 @@
+{
+  "actorSpecification": 1,
+  "name": "aesthetic-music-tagger",
+  "title": "Aesthetic Music Tagger",
+  "version": "1.0",
+  "buildTag": "latest",
+  "environmentVariables": {},
+  "input": {
+    "title": "Aesthetic Music Tagger Input",
+    "description": "Analyzes an audio file and returns aesthetic/mood/energy tags",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+      "fileUrl": {
+        "title": "Audio File URL",
+        "type": "string",
+        "description": "URL to an audio file (MP3, FLAC, WAV, OGG)",
+        "editor": "textfield"
+      },
+      "filePath": {
+        "title": "Local File Path",
+        "type": "string",
+        "description": "Local path to an audio file (alternative to fileUrl)",
+        "editor": "textfield"
+      }
+    }
+  }
+}

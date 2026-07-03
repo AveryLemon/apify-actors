@@ -1,0 +1,22 @@
+{
+  "actorSpecification": 1,
+  "name": "playlist-optimizer",
+  "title": "Playlist Optimizer",
+  "version": "1.0",
+  "buildTag": "latest",
+  "environmentVariables": {},
+  "input": {
+    "title": "Playlist Optimizer Input",
+    "description": "Takes a list of tracks and returns an optimized ordering with energy arc analysis",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+      "tracks": {
+        "title": "Track List",
+        "type": "string",
+        "description": "JSON array of track objects with title, artist, genre, bpm, energy fields",
+        "editor": "textarea"
+      }
+    }
+  }
+}

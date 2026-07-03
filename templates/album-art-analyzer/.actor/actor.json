@@ -1,0 +1,22 @@
+{
+  "actorSpecification": 1,
+  "name": "album-art-analyzer",
+  "title": "Album Art Analyzer",
+  "version": "1.0",
+  "buildTag": "latest",
+  "environmentVariables": {},
+  "input": {
+    "title": "Album Art Analyzer Input",
+    "description": "Analyzes an album art image and returns color harmony, composition score, mood palette",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+      "imageUrl": {
+        "title": "Image URL",
+        "type": "string",
+        "description": "URL to an album art image (JPEG, PNG, WebP)",
+        "editor": "textfield"
+      }
+    }
+  }
+}
