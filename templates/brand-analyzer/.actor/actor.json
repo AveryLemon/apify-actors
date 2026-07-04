@@ -1,0 +1,36 @@
+{
+  "actorSpecification": 1,
+  "name": "cross-modal-brand-analyzer",
+  "title": "Cross-Modal Brand Consistency Analyzer",
+  "version": "1.0",
+  "buildTag": "latest",
+  "environmentVariables": {},
+  "input": {
+    "title": "Brand Content Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+      "imageUrls": {
+        "title": "Image URLs",
+        "type": "array",
+        "description": "URLs of brand visual content (logos, ads, social posts, products)",
+        "editor": "stringList",
+        "prefill": []
+      },
+      "audioUrls": {
+        "title": "Audio URLs",
+        "type": "array",
+        "description": "URLs of brand audio content (jingles, ads, podcast intros, sonic logos)",
+        "editor": "stringList",
+        "prefill": []
+      },
+      "brandName": {
+        "title": "Brand Name (optional)",
+        "type": "string",
+        "description": "Brand name for labeling the report",
+        "editor": "textfield"
+      }
+    },
+    "required": []
+  }
+}

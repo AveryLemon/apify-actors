@@ -1,0 +1,22 @@
+{
+  "actorSpecification": 1,
+  "name": "audio-mood-analyzer",
+  "title": "Audio Mood & Emotion Analyzer",
+  "version": "1.0",
+  "buildTag": "latest",
+  "environmentVariables": {},
+  "input": {
+    "title": "Audio File URL",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+      "fileUrl": {
+        "title": "Audio File URL",
+        "type": "string",
+        "description": "URL to an audio file (MP3, FLAC, WAV, OGG, M4A)",
+        "editor": "textfield"
+      }
+    },
+    "required": []
+  }
+}

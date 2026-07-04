@@ -1,0 +1,54 @@
+{
+  "actorSpecification": 1,
+  "name": "tts-voiceover-actor",
+  "title": "TTS Voiceover Actor",
+  "version": "1.0",
+  "buildTag": "latest",
+  "environmentVariables": {},
+  "input": {
+    "title": "TTS Voiceover Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+      "text": {
+        "title": "Text to Speak",
+        "type": "string",
+        "description": "The text content to convert to speech (max ~5000 characters). Supports sentences, paragraphs, and punctuation for natural pauses.",
+        "editor": "textarea"
+      },
+      "voice": {
+        "title": "Voice Preset",
+        "type": "string",
+        "description": "Voice style: narrator (US English), friendly (warm US), professional (British), energetic (upbeat US), soft (slow US), australian, indian",
+        "default": "narrator",
+        "editor": "select",
+        "enum": ["narrator", "friendly", "professional", "energetic", "soft", "australian", "indian"]
+      },
+      "speed": {
+        "title": "Speed Multiplier",
+        "type": "number",
+        "description": "Playback speed factor (0.5 = half speed, 1.0 = normal, 2.0 = double speed). Note: client-side speed adjustment is applied — gTTS generates at normal speed.",
+        "default": 1.0,
+        "minimum": 0.5,
+        "maximum": 2.0,
+        "prefill": 1.0
+      },
+      "lang": {
+        "title": "Language",
+        "type": "string",
+        "description": "ISO 639-1 language code (e.g., en, es, fr, de, it, pt, ja, ko, zh-CN). Default: en",
+        "default": "en",
+        "editor": "textfield"
+      },
+      "action": {
+        "title": "Action",
+        "type": "string",
+        "description": "What to do: 'synthesize' (default) generates audio, 'list_voices' returns available voices, 'list_languages' returns supported languages",
+        "default": "synthesize",
+        "editor": "select",
+        "enum": ["synthesize", "list_voices", "list_languages"]
+      }
+    },
+    "required": ["text"]
+  }
+}

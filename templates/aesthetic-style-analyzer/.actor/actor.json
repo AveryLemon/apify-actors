@@ -1,0 +1,27 @@
+{
+  "actorSpecification": 1,
+  "name": "aesthetic-style-analyzer",
+  "title": "Aesthetic / Style Image Analyzer",
+  "version": "1.0",
+  "buildTag": "latest",
+  "environmentVariables": {},
+  "input": {
+    "title": "Aesthetic Style Analyzer Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+      "imageUrl": {
+        "title": "Image URL",
+        "type": "string",
+        "description": "URL to an image file (JPEG, PNG, WebP) to analyze for aesthetic quality, style, and composition",
+        "editor": "textfield"
+      },
+      "imagePath": {
+        "title": "Image Path (local)",
+        "type": "string",
+        "description": "Local file path to an image (alternative to imageUrl for local runners)",
+        "editor": "textfield"
+      }
+    }
+  }
+}

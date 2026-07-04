@@ -1,0 +1,61 @@
+{
+  "actorSpecification": 1,
+  "name": "bg-remover",
+  "title": "Background Remover + Enhancer",
+  "version": "1.0",
+  "buildTag": "latest",
+  "environmentVariables": {},
+  "input": {
+    "title": "Background Remover Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+      "imageUrl": {
+        "title": "Image URL",
+        "type": "string",
+        "description": "URL of the image to process (JPG, PNG, WebP)",
+        "editor": "textfield"
+      },
+      "imageUrls": {
+        "title": "Batch Image URLs",
+        "type": "array",
+        "description": "Process multiple images: array of URLs. Overrides imageUrl if provided.",
+        "editor": "json",
+        "prefill": []
+      },
+      "mode": {
+        "title": "Output Mode",
+        "type": "string",
+        "enum": ["transparent", "white", "composite"],
+        "description": "transparent = PNG with alpha. white = white background. composite = new bg + shadow.",
+        "default": "transparent"
+      },
+      "backgroundUrl": {
+        "title": "Composite Background URL",
+        "type": "string",
+        "description": "URL of background image to use in composite mode",
+        "editor": "textfield"
+      },
+      "addShadow": {
+        "title": "Add Realistic Shadow",
+        "type": "boolean",
+        "description": "Add drop shadow in composite mode",
+        "default": true
+      },
+      "enhance": {
+        "title": "Auto-Enhance",
+        "type": "boolean",
+        "description": "Apply auto-contrast, brightness normalization after removal",
+        "default": false
+      },
+      "outputFormat": {
+        "title": "Output Format",
+        "type": "string",
+        "enum": ["png", "jpeg", "webp"],
+        "description": "File format for output images",
+        "default": "png"
+      }
+    },
+    "required": []
+  }
+}

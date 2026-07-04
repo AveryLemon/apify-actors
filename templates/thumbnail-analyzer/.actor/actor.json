@@ -1,0 +1,47 @@
+{
+  "actorSpecification": 1,
+  "name": "thumbnail-ctr-analyzer",
+  "title": "Thumbnail CTR Analyzer & Generator",
+  "version": "1.0",
+  "buildTag": "latest",
+  "environmentVariables": {},
+  "input": {
+    "title": "Thumbnail Analysis Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+      "imageUrl": {
+        "title": "Image URL",
+        "type": "string",
+        "description": "URL of the thumbnail image to analyze",
+        "editor": "textfield"
+      },
+      "youtubeUrl": {
+        "title": "YouTube Video URL",
+        "type": "string",
+        "description": "YouTube video URL to extract thumbnail from (alternative to imageUrl)",
+        "editor": "textfield"
+      },
+      "imagePath": {
+        "title": "Local Image Path",
+        "type": "string",
+        "description": "Local filesystem path to the image (for internal/testing use)",
+        "editor": "textfield"
+      },
+      "generateVariants": {
+        "title": "Generate Variants",
+        "type": "boolean",
+        "description": "Generate optimized thumbnail variants",
+        "default": false
+      },
+      "variantCount": {
+        "title": "Number of Variants",
+        "type": "integer",
+        "description": "Number of optimized variants to generate (1-5)",
+        "default": 3,
+        "maximum": 5,
+        "minimum": 1
+      }
+    }
+  }
+}

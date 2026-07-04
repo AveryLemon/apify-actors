@@ -176,7 +176,7 @@ The Apify Store has **47,173 actors** — overwhelmingly **web scrapers** (95%+)
 | milastream | Image generation | LOW — generation only, no analysis | |
 | singlesurge | Music generation | MEDIUM — only 1 competitor, very new | |
 
-**OWL's strategic advantage:** Combined analysis + generation is something NO competitor does. Musicae only analyzes Spotify data. Singlesurge only generates. OWL does BOTH from any audio source.
+**OWL's strategic advantage:** OWL is the ONLY developer on Apify doing deep creative *analysis* — aesthetic scoring, mood profiling, style classification, cross-modal brand intelligence. OWL's 11 actors cover audio analysis, image analysis, TTS, content repurposing, and brand analysis — all without GPU. Generation (music, voice cloning) moves to OWL's own GPU-equipped hardware.
 
 ---
 
@@ -192,7 +192,11 @@ The Apify Store has **47,173 actors** — overwhelmingly **web scrapers** (95%+)
 - **Weakness:** Generic text-to-image. No style consistency, no brand voice, no batch mode.
 - **Our move:** Brand voice image generator — generate images consistent with a brand's existing visual identity.
 
-### singlesurge's ai-music-studio-generator — What to Watch
+### singlesurge's ai-music-studio-generator — What to Watch (NOW DEPRECATED)
+- **Status:** Deprecated — confirms API-wrap fragility for music generation actors
+- **Lesson for OWL:** Music generation requires GPU (not available on Apify Docker) or a stable external API (proven unstable). Both P1-10 (Music Gen) and P2-3 (Voice Cloning) have been killed for this reason.
+- **OWL's revised move:** Focus on music *analysis* (librosa-based, no GPU) which OWL has mastered (Aesthetic Music Tagger, Audio Mood Analyzer). Generation moves to OWL's own GPU-equipped Windows machine.
+- **Apify platform limitation confirmed:** Docker containers have NO GPU. Any actor requiring PyTorch/CUDA inference is unbuildable. Only analysis + lightweight ONNX (rembg, audio-separator) are viable.
 - **Input:** Text prompt → song + remix + instrumental + cover art
 - **Strength:** Multi-format output. First mover in music gen on Apify.
 - **Weakness:** Generic prompts. No brand voice. No mood targeting.
