@@ -68,21 +68,21 @@ class AlbumArtAnalyzer:
         gn = g / max_val
         bn = b / max_val
 
-        # Dominant channel heuristics
-        if rn > 0.8 and gn < 0.6 and bn < 0.6:
-            return 'red'
-        elif rn > 0.8 and gn > 0.5 and bn < 0.3:
-            return 'orange'
-        elif rn > 0.8 and gn > 0.8 and bn < 0.3:
+        # Dominant channel heuristics — ordered by specificity (most specific first)
+        if rn > 0.8 and gn > 0.8 and bn < 0.3:
             return 'yellow'
+        elif rn > 0.8 and gn < 0.4 and bn < 0.4:
+            return 'red'
+        elif rn > 0.8 and gn > 0.5 and bn > 0.6:
+            return 'pink'
+        elif rn > 0.8 and gn > 0.4 and bn < 0.3:
+            return 'orange'
         elif gn > 0.8 and rn < 0.6 and bn < 0.6:
             return 'green'
         elif bn > 0.8 and rn < 0.6 and gn < 0.6:
             return 'blue'
         elif rn > 0.6 and gn > 0.2 and bn > 0.6:
             return 'purple'
-        elif rn > 0.8 and gn > 0.5 and bn > 0.6:
-            return 'pink'
         elif rn > 0.5 and gn > 0.4 and bn < 0.3:
             return 'brown'
         else:

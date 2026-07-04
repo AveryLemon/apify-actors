@@ -1,0 +1,4 @@
+# Requirements for Stem Separator actor
+audio-separator>=0.44.0
+onnxruntime>=1.20.0
+apify>=2.0.0

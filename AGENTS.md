@@ -31,10 +31,12 @@
 4. **Pick highest priority 🔲 ticket** (P0 before P1 before P2)
 5. **Read the ticket file** in TICKETS/
 6. **Execute** — build, push, document
-7. **Mark complete** in TICKET.md
-8. **Update TIMELINE.md** — Add entry with time + event + impact
-9. **Update HANDOFF.md** — Reflect new current state
-10. **Commit** if code changes
+7. **Run tests** — `python3 test_*.py` from the actor's directory. ALL must pass before marking complete.
+8. **Mark complete** in TICKET.md
+9. **Update TIMELINE.md** — Add entry with time + event + impact
+10. **Update HANDOFF.md** — Reflect new current state
+11. **Commit** if code changes
+12. **Re-push** if code changed (the push updates the live actor)
 
 ## Key Commands
 

@@ -1,0 +1,28 @@
+{
+  "actorSpecification": 1,
+  "name": "stem-separator",
+  "title": "Audio Stem Separator",
+  "version": "1.0",
+  "buildTag": "latest",
+  "environmentVariables": {},
+  "input": {
+    "title": "Audio Stem Separator Input",
+    "description": "Provide an audio file URL to separate into stems (vocals, drums, bass, other instruments)",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+      "fileUrl": {
+        "title": "Audio File URL",
+        "type": "string",
+        "description": "URL to an audio file (MP3, FLAC, WAV, OGG, M4A) for stem separation",
+        "editor": "textfield"
+      },
+      "filePath": {
+        "title": "Local File Path",
+        "type": "string",
+        "description": "Local path to an audio file (alternative to fileUrl, for testing)",
+        "editor": "textfield"
+      }
+    }
+  }
+}
