@@ -174,9 +174,20 @@ The Apify Store has **47,173 actors** — overwhelmingly **web scrapers** (95%+)
 | akash9078 | Image utilities (basic) | LOW — shallow analysis, broad but shallow collection | |
 | marielise.dev | Image SEO/quality | LOW — narrow focus on SEO metadata | |
 | milastream | Image generation | LOW — generation only, no analysis | |
-| singlesurge | Music generation | MEDIUM — only 1 competitor, very new | |
+| singlesurge | Music generation | 🚫 DEPRECATED — API-wrap fragility confirmed | |
+| calm_necessity | Music generation (MultipleWords API-wrap) | LOW — GEN/analysis — follows same fragile API-wrap pattern as singlesurge | |
+| HumbleIgnite | Music generation (MultipleWords API-wrap fork) | LOW — GEN only — clone of calm_necessity pattern | |
+| BoldBastion | Music generation (MultipleWords API-wrap fork) | LOW — GEN only — clone of calm_necessity pattern | |
+| syntellect_ai | Audio transcription + entity extraction | LOW — ANALYSIS but transcription/extraction, not creative. Needs API key. No mood/emotion. | |
+| BigAnomaly | Color palette (text-to-palette) | LOW — text-input only, not image-based. MultipleWords API-wrap. | |
+| VastHornet | TTS via Google Cloud API | LOW — GEN/analysis — requires API key, OWL's gTTS is free. Fewer voices. | |
+| stanvanrooy6 | TTS via OpenAI (6 English voices only) | LOW — GEN only — 6 English voices vs OWL's 7+ presets × 22 languages | |
 
 **OWL's strategic advantage:** OWL is the ONLY developer on Apify doing deep creative *analysis* — aesthetic scoring, mood profiling, style classification, cross-modal brand intelligence. OWL's 11 actors cover audio analysis, image analysis, TTS, content repurposing, and brand analysis — all without GPU. Generation (music, voice cloning) moves to OWL's own GPU-equipped hardware.
+
+**Classification insight (July 5, 2026):** The AI Music Generator space on Apify has MULTIPLE entrants (calm_necessity, HumbleIgnite, BoldBastion) but ALL are API-wraps around the same MultipleWords API. This proliferation pattern confirms the fragility thesis — these are clones, not differentiated products. Singlesurge's deprecation plus MultipleWords API-wraps' reliance on an external service means these actors have a short shelf life. OWL should NOT create counter-tickets for generation actors; they occupy a different market with inherent fragility.
+
+**New TTS competitor note:** Two TTS actors appeared (VastHornet/google-speech, stanvanrooy6/openai-tts). Both require external API keys. OWL's gTTS-based TTS Voiceover Actor is FREE (no API key, no cost per run), has more voices (7 presets × 22 languages), and has 40 passing tests. OWL maintains the advantage through accessibility and language diversity.
 
 ---
 
@@ -201,3 +212,9 @@ The Apify Store has **47,173 actors** — overwhelmingly **web scrapers** (95%+)
 - **Strength:** Multi-format output. First mover in music gen on Apify.
 - **Weakness:** Generic prompts. No brand voice. No mood targeting.
 - **Our move:** Mood-targeted music generation with brand consistency. "Generate brand-consistent background music for [brand] with [mood] energy."
+
+### The MultipleWords API-wrap Proliferation (New, July 5, 2026)
+- **Pattern:** Multiple developers (calm_necessity, HumbleIgnite, BoldBastion) wrapped identical MultipleWords API as music generators — zero differentiation, zero moat
+- **What to steal:** Nothing — the pattern is actively harmful. MultipleWords API has no published SLA, no pricing transparency, and these actors are API-cost pass-throughs.
+- **What to learn:** This confirms OWL's API-wrap fragility thesis. Any actor that wraps an external API without adding local compute value is a ticking time bomb.
+- **OwL's differentiator:** Library-based analysis (librosa, Pillow, numpy) requires zero external API calls, zero API keys, zero ongoing cost. This is OWL's structural moat.
