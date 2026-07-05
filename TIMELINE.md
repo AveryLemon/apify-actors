@@ -374,6 +374,82 @@
 ### Key Decisions
 1. **Decision:** No new tickets created this cycle. The MultipleWords API-wrap proliferation is a different market (generation, fragile API dependencies) and does not represent competition in OWL's creative analysis niche. Creating counter-tickets would dilute the queue. Marked as "watch, don't act" in CI doc. The existing OWL strategy (library-based analysis with librosa/Pillow/numpy, zero API dependencies) is validated as the correct moat.
 
+### 07:00 EDT — Hourly Guardian — Health check only (gate: 7AM cron window, 17th consecutive cycle w/o change)
+
+| Time | Event | Impact |
+|------|-------|--------|
+| 07:00 | **Health check** — RAM 86% free, disk 118Gi available, 0 processes, swap 47% used (964M/2048M) | RAM ✅ Disk ✅ Processes ✅ Swap <50% ✅ |
+| 07:00 | **Gate: 06:50-07:20 cron window** — 7AM Evolution Engine owns this slot | ⏭️ Skipping ticket work, deferring to 7AM cron |
+| 07:00 | Updated HANDOFF.md with current state | Documentation fresh, 17th consecutive cycle without change |
+
+### 07:29 EDT — Evolution Engine — Nightly Evolution Run (Track 1-3)
+
+| Time | Event | Impact |
+|------|-------|--------|
+| 07:29 | **RAM check** — 86% free | ✅ Green zone — full cycle proceeds |
+| 07:29 | **Track 1: Skill Research** — Hermes v0.16.0 local vs v0.18.0 latest (2-version gap). agy v1.0.8 local vs v1.0.16 latest (8-version gap 🔴). No new buildable/open-source TTS models discovered that change OWL's strategy. TTS landscape stable. | Version gap widening — agy pre-v1.0.13 has known regex privilege escalation vulnerability. |
+| 07:29 | **Track 2: Apify Intelligence** — No new creative/analysis competitors found on Apify Store. calm_necessity's MultipleWords API-wraps are generation-only, not in OWL's niche. 18th consecutive cycle without change. | Blue ocean uncontested ✅. All 11 actors still unpriced — revenue blocked on Apify Console UI. |
+| 07:29 | **Track 3: Cross-Pollination** — No new cross-pollination opportunities identified. Existing Apify analysis actors (aesthetic scoring, mood profiling, brand analysis) already map to OWL's creative empire methodology. | Cross-pollination established at steady state. |
+
+### Key Decisions
+1. **Version gap escalation noted but no action possible** — Hermes upgrade (v0.16.0 → v0.18.0) and agy upgrade (v1.0.8 → v1.0.16) both require user approval. agy security vulnerability (pre-v1.0.13 regex privilege escalation) is 8 versions old. Flagged as 🔴 CRITICAL in report.
+2. **No new Apify tickets** — All 11 buildable actors live. Phase 1 complete.
+3. **No cross-pollination tickets** — Integration points already established.
+
+### Hourly Guardian: ~08:00 EDT — [SILENT] 19th consecutive cycle without change
+
+| Time | Event | Impact |
+|------|-------|--------|
+| ~08:00 | **Health check** — RAM 84% free, disk 118Gi available, 0 active processes | RAM ✅ Disk ✅ Processes ✅ |
+| ~08:00 | **Lightweight siphon** — No new creative/analysis entrants found. Podcast Transcriber & Analyzer (hgservices, June 20) noted but does not overlap OWL's niche (transcription vs video/transcript repurposing with social posts, quote cards, audiograms). | Blue ocean uncontested ✅ |
+| ~08:00 | Updated HANDOFF.md — bumped counter to 19th consecutive cycle | Documentation fresh |
+
+### Key Decisions
+1. **No new tickets created** — No new buildable gaps identified. Competitive landscape unchanged.
+2. **Pricing still blocking revenue** — Needs Apify Console UI. Cannot automate.
+
+### Key Decisions
+1. **No new tickets created** — No new buildable gaps identified. Competitive landscape unchanged.
+2. **Pricing still blocking revenue** — Needs Apify Console UI. Cannot automate.
+
 ### Known Issues
-- All 11 actors have 0 runs (not priced) — revenue blocked on Apify Console UI access
-- 16th consecutive cycle without change — steady state protocol maintained
+|- All 11 actors have 0 runs (not priced) — revenue blocked on Apify Console UI access
+|- 19th consecutive cycle without change — steady state protocol maintained
+|- agy v1.0.8 is 8 versions behind latest (v1.0.16). Pre-v1.0.13 has known regex privilege escalation vulnerability. 🔴 CRITICAL
+|- Hermes v0.16.0 is 2 versions behind latest (v0.18.0). P0/P1 sweep, MoA, /learn, /journey, verification contracts unavailable.|
+
+---
+
+## 2026-07-05 — 09:06 EDT — Hourly Guardian — [SILENT] 20th consecutive cycle without change
+
+| Time | Event | Impact |
+|------|-------|--------|
+| 09:06 | **Health check** — RAM 84% free, disk 118Gi available, 0 active processes | RAM ✅ Disk ✅ Processes ✅ |
+| 09:06 | **Lightweight siphon (1 query)** — lupara90/prompt-builder (prompt template tool, not analysis), tri_angle/social-sentiment (text sentiment, different niche), automation-lab/css-color-extractor (web scraping), visita/topic-trend-aggregator (market intel, different niche). **No new creative/analysis entrants in OWL's audio/image niche.** | Blue ocean uncontested ✅ |
+| 09:06 | Updated HANDOFF.md — bumped counter to 20th consecutive cycle | Documentation fresh |
+
+### Key Decisions
+1. **No new tickets created** — Competitive landscape unchanged since 08:00 EDT check. 20th consecutive cycle with no substantive change.
+2. **Mature steady-state (15+ cycles) active** — 1 query rule, commit batching, [SILENT] suppression.
+
+## 2026-07-05 — 10:00 EDT — Hourly Guardian — [SILENT] 21st consecutive cycle without change
+
+| Time | Event | Impact |
+|------|-------|--------|
+| 10:00 | **Health check** — RAM 83% free, disk 118Gi available, 0 active processes | RAM ✅ Disk ✅ Processes ✅ |
+| 10:00 | **Lightweight siphon (1 query)** — calm_necessity/ai-music-generator (known, MultipleWords API-wrap generation, not analysis), calm_necessity/ai-song-generator (known, same pattern), easyapi/ai-artist-discovery-tool [DEPRECATED] (was $2,990/1k, now dead), ahmedmulti74/sound-effects-generator [DEPRECATED]. **No new creative/analysis entrants in OWL's niche.** | Blue ocean uncontested ✅ |
+| 10:00 | Updated HANDOFF.md — bumped counter to 21st consecutive cycle | Documentation fresh |
+
+### Key Decisions
+1. **No new tickets created** — Competitive landscape unchanged since 09:06 EDT check. 21st consecutive cycle with no substantive change.
+2. **Mature steady-state (15+ cycles) active** — 1 query rule, commit batching, [SILENT] suppression.
+
+---
+
+### 11:00 EDT — Daily Timestamp Sync — git add, commit, push (daily cron)
+
+| Time | Event | Impact |
+|------|-------|--------|
+| 11:00 | **Health check** — RAM 83%+ free (est), disk 118Gi available | ✅ |
+| 11:00 | **Daily sync** — Updated TIMELINE.md + HANDOFF.md for timestamp sync | Documentation fresh |
+| 11:00 | **22nd consecutive cycle without change** — steady state maintained, no new buildable actors or competitor gaps | No action needed |
