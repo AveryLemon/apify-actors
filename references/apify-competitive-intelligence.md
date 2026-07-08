@@ -1,4 +1,4 @@
-# Apify Competitive Intelligence — Updated July 4, 2026
+# Apify Competitive Intelligence — Updated July 6, 2026
 
 > **Living document.** Every siphon session updates this file. Gaps found create tickets in TICKETS/.
 
@@ -182,6 +182,7 @@ The Apify Store has **47,173 actors** — overwhelmingly **web scrapers** (95%+)
 | BigAnomaly | Color palette (text-to-palette) | LOW — text-input only, not image-based. MultipleWords API-wrap. | |
 | VastHornet | TTS via Google Cloud API | LOW — GEN/analysis — requires API key, OWL's gTTS is free. Fewer voices. | |
 | stanvanrooy6 | TTS via OpenAI (6 English voices only) | LOW — GEN only — 6 English voices vs OWL's 7+ presets × 22 languages | |
+| **whoareyouanas** | **Creative Intelligence — AI Ad Creative Analysis** | **LOW — ANALYSIS but API-wrapper (needs OpenAI/xAI/Claude key). Ad-focused (hooks, CTAs, visual tags), not aesthetic/mood scoring. OWL's heuristic actors are self-contained, need no API key, and cover broader creative analysis.** | |
 
 **OWL's strategic advantage:** OWL is the ONLY developer on Apify doing deep creative *analysis* — aesthetic scoring, mood profiling, style classification, cross-modal brand intelligence. OWL's 11 actors cover audio analysis, image analysis, TTS, content repurposing, and brand analysis — all without GPU. Generation (music, voice cloning) moves to OWL's own GPU-equipped hardware.
 
